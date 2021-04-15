@@ -11,7 +11,7 @@ import java.awt.event.ActionListener;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class EmployeeQuestions {
+public class Queue<E> {
     public static final int ACTION_TYPE_SHOW_ALL = 1;
     public static final int ACTION_TYPE_SHOW_BY_INDEX = 2;
     public static final int ACTION_TYPE_ADD = 3;
@@ -54,7 +54,7 @@ public class EmployeeQuestions {
                     showEmployeeByIndex(input);
                     break;
                 }
-                case ACTION_TYPE_ADD: {
+                case ACTION_TYPE_enqueue: {
                     addEmployee(input);
                     break;
                 }
@@ -62,7 +62,7 @@ public class EmployeeQuestions {
                     updateEmployee(input);
                     break;
                 }
-                case ACTION_TYPE_DELETE: {
+                case ACTION_TYPE_ dequeue: {
                     deleteEmployee(input);
                     break;
                 }
