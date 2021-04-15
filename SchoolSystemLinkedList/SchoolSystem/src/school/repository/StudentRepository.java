@@ -32,11 +32,11 @@ public class StudentRepository {
         }
     }
 
-    public LinkedList<Student> getAll() {
+    public DoublyLinkedList<Student> getAll() {
         try{
             ResultSet resultSet = statement.executeQuery(Student.getSelectQuery());
 
-            LinkedList<Student> studentList = new LinkedList<>();
+            DoublyLinkedList<Student> studentList = new DoublyLinkedList<>();
 
             while (resultSet.next()) {
                 Student student = new Student(
