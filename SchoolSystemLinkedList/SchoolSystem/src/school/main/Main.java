@@ -36,9 +36,9 @@ public class Main {
         do {
             System.out.println("==================== School System");
             System.out.println("Please enter");
-            System.out.println(MAIN_TYPE_EMPLOYEE + ": To manage Employee");
-            System.out.println(MAIN_TYPE_STUDENT + ": To manage Student");
-            System.out.println(MAIN_TYPE_SUBJECT + ": To manage Subject");
+            System.out.println(frist_TYPE_EMPLOYEE + ": To manage Employee");
+            System.out.println(frist_TYPE_STUDENT + ": To manage Student");
+            System.out.println(frist_TYPE_SUBJECT + ": To manage Subject");
             System.out.print("Your choice is: ");
             choice = input.nextInt();
             switch (choice) {
